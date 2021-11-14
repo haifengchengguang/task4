@@ -1,0 +1,262 @@
+Simulator report for registers
+Mon May 10 23:02:08 2021
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 54 nodes     ;
+; Simulation Coverage         ;       7.41 % ;
+; Total Number of Transitions ; 14           ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C8Q208C8  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       7.41 % ;
+; Total nodes checked                                 ; 54           ;
+; Total output ports checked                          ; 54           ;
+; Total output ports with complete 1/0-value coverage ; 4            ;
+; Total output ports with no 1/0-value coverage       ; 44           ;
+; Total output ports with no 1-value coverage         ; 44           ;
+; Total output ports with no 0-value coverage         ; 50           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                          ;
++-----------------------------------------+-----------------------------------------+------------------+
+; Node Name                               ; Output Port Name                        ; Output Port Type ;
++-----------------------------------------+-----------------------------------------+------------------+
+; |registers|register--8:R0|inst8         ; |registers|register--8:R0|inst8         ; combout          ;
+; |registers|cp                           ; |registers|cp~corein                    ; combout          ;
+; |registers|write0/read1                 ; |registers|write0/read1~corein          ; combout          ;
+; |registers|register--8:R0|inst8~clkctrl ; |registers|register--8:R0|inst8~clkctrl ; outclk           ;
++-----------------------------------------+-----------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                             ;
++-----------------------------------------+-----------------------------------------+------------------+
+; Node Name                               ; Output Port Name                        ; Output Port Type ;
++-----------------------------------------+-----------------------------------------+------------------+
+; |registers|register--8:R1|inst7         ; |registers|register--8:R1|inst7         ; regout           ;
+; |registers|register--8:R0|inst7         ; |registers|register--8:R0|inst7         ; regout           ;
+; |registers|selector:inst2|inst41~10     ; |registers|selector:inst2|inst41~10     ; combout          ;
+; |registers|register--8:R1|inst6         ; |registers|register--8:R1|inst6         ; regout           ;
+; |registers|register--8:R0|inst6         ; |registers|register--8:R0|inst6         ; regout           ;
+; |registers|selector:inst2|inst40~10     ; |registers|selector:inst2|inst40~10     ; combout          ;
+; |registers|register--8:R1|inst5         ; |registers|register--8:R1|inst5         ; regout           ;
+; |registers|register--8:R1|inst4         ; |registers|register--8:R1|inst4         ; regout           ;
+; |registers|register--8:R0|inst4         ; |registers|register--8:R0|inst4         ; regout           ;
+; |registers|selector:inst2|inst38~10     ; |registers|selector:inst2|inst38~10     ; combout          ;
+; |registers|register--8:R1|inst3         ; |registers|register--8:R1|inst3         ; regout           ;
+; |registers|register--8:R0|inst3         ; |registers|register--8:R0|inst3         ; regout           ;
+; |registers|selector:inst2|inst37~10     ; |registers|selector:inst2|inst37~10     ; combout          ;
+; |registers|register--8:R1|inst2         ; |registers|register--8:R1|inst2         ; regout           ;
+; |registers|register--8:R0|inst2         ; |registers|register--8:R0|inst2         ; regout           ;
+; |registers|selector:inst2|inst36~10     ; |registers|selector:inst2|inst36~10     ; combout          ;
+; |registers|register--8:R1|inst1         ; |registers|register--8:R1|inst1         ; regout           ;
+; |registers|register--8:R1|inst          ; |registers|register--8:R1|inst          ; regout           ;
+; |registers|register--8:R0|inst          ; |registers|register--8:R0|inst          ; regout           ;
+; |registers|selector:inst2|inst34~10     ; |registers|selector:inst2|inst34~10     ; combout          ;
+; |registers|register--8:R1|inst8         ; |registers|register--8:R1|inst8         ; combout          ;
+; |registers|q0                           ; |registers|q0                           ; padio            ;
+; |registers|q1                           ; |registers|q1                           ; padio            ;
+; |registers|q3                           ; |registers|q3                           ; padio            ;
+; |registers|q4                           ; |registers|q4                           ; padio            ;
+; |registers|q5                           ; |registers|q5                           ; padio            ;
+; |registers|q7                           ; |registers|q7                           ; padio            ;
+; |registers|sel                          ; |registers|sel~corein                   ; combout          ;
+; |registers|d0                           ; |registers|d0~corein                    ; combout          ;
+; |registers|clr                          ; |registers|clr~corein                   ; combout          ;
+; |registers|d1                           ; |registers|d1~corein                    ; combout          ;
+; |registers|d2                           ; |registers|d2~corein                    ; combout          ;
+; |registers|d3                           ; |registers|d3~corein                    ; combout          ;
+; |registers|d4                           ; |registers|d4~corein                    ; combout          ;
+; |registers|d5                           ; |registers|d5~corein                    ; combout          ;
+; |registers|d6                           ; |registers|d6~corein                    ; combout          ;
+; |registers|d7                           ; |registers|d7~corein                    ; combout          ;
+; |registers|register--8:R1|inst8~clkctrl ; |registers|register--8:R1|inst8~clkctrl ; outclk           ;
+; |registers|clr~clkctrl                  ; |registers|clr~clkctrl                  ; outclk           ;
+; |registers|register--8:R0|inst7~feeder  ; |registers|register--8:R0|inst7~feeder  ; combout          ;
+; |registers|register--8:R0|inst5~feeder  ; |registers|register--8:R0|inst5~feeder  ; combout          ;
+; |registers|register--8:R0|inst2~feeder  ; |registers|register--8:R0|inst2~feeder  ; combout          ;
+; |registers|register--8:R0|inst1~feeder  ; |registers|register--8:R0|inst1~feeder  ; combout          ;
+; |registers|register--8:R0|inst~feeder   ; |registers|register--8:R0|inst~feeder   ; combout          ;
++-----------------------------------------+-----------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                             ;
++-----------------------------------------+-----------------------------------------+------------------+
+; Node Name                               ; Output Port Name                        ; Output Port Type ;
++-----------------------------------------+-----------------------------------------+------------------+
+; |registers|register--8:R1|inst7         ; |registers|register--8:R1|inst7         ; regout           ;
+; |registers|register--8:R0|inst7         ; |registers|register--8:R0|inst7         ; regout           ;
+; |registers|selector:inst2|inst41~10     ; |registers|selector:inst2|inst41~10     ; combout          ;
+; |registers|register--8:R1|inst6         ; |registers|register--8:R1|inst6         ; regout           ;
+; |registers|register--8:R0|inst6         ; |registers|register--8:R0|inst6         ; regout           ;
+; |registers|selector:inst2|inst40~10     ; |registers|selector:inst2|inst40~10     ; combout          ;
+; |registers|register--8:R1|inst5         ; |registers|register--8:R1|inst5         ; regout           ;
+; |registers|register--8:R0|inst5         ; |registers|register--8:R0|inst5         ; regout           ;
+; |registers|selector:inst2|inst39~10     ; |registers|selector:inst2|inst39~10     ; combout          ;
+; |registers|register--8:R1|inst4         ; |registers|register--8:R1|inst4         ; regout           ;
+; |registers|register--8:R0|inst4         ; |registers|register--8:R0|inst4         ; regout           ;
+; |registers|selector:inst2|inst38~10     ; |registers|selector:inst2|inst38~10     ; combout          ;
+; |registers|register--8:R1|inst3         ; |registers|register--8:R1|inst3         ; regout           ;
+; |registers|register--8:R0|inst3         ; |registers|register--8:R0|inst3         ; regout           ;
+; |registers|selector:inst2|inst37~10     ; |registers|selector:inst2|inst37~10     ; combout          ;
+; |registers|register--8:R1|inst2         ; |registers|register--8:R1|inst2         ; regout           ;
+; |registers|register--8:R0|inst2         ; |registers|register--8:R0|inst2         ; regout           ;
+; |registers|selector:inst2|inst36~10     ; |registers|selector:inst2|inst36~10     ; combout          ;
+; |registers|register--8:R1|inst1         ; |registers|register--8:R1|inst1         ; regout           ;
+; |registers|register--8:R0|inst1         ; |registers|register--8:R0|inst1         ; regout           ;
+; |registers|selector:inst2|inst35~10     ; |registers|selector:inst2|inst35~10     ; combout          ;
+; |registers|register--8:R1|inst          ; |registers|register--8:R1|inst          ; regout           ;
+; |registers|register--8:R0|inst          ; |registers|register--8:R0|inst          ; regout           ;
+; |registers|selector:inst2|inst34~10     ; |registers|selector:inst2|inst34~10     ; combout          ;
+; |registers|register--8:R1|inst8         ; |registers|register--8:R1|inst8         ; combout          ;
+; |registers|q0                           ; |registers|q0                           ; padio            ;
+; |registers|q1                           ; |registers|q1                           ; padio            ;
+; |registers|q2                           ; |registers|q2                           ; padio            ;
+; |registers|q3                           ; |registers|q3                           ; padio            ;
+; |registers|q4                           ; |registers|q4                           ; padio            ;
+; |registers|q5                           ; |registers|q5                           ; padio            ;
+; |registers|q6                           ; |registers|q6                           ; padio            ;
+; |registers|q7                           ; |registers|q7                           ; padio            ;
+; |registers|sel                          ; |registers|sel~corein                   ; combout          ;
+; |registers|d0                           ; |registers|d0~corein                    ; combout          ;
+; |registers|clr                          ; |registers|clr~corein                   ; combout          ;
+; |registers|d1                           ; |registers|d1~corein                    ; combout          ;
+; |registers|d2                           ; |registers|d2~corein                    ; combout          ;
+; |registers|d3                           ; |registers|d3~corein                    ; combout          ;
+; |registers|d4                           ; |registers|d4~corein                    ; combout          ;
+; |registers|d5                           ; |registers|d5~corein                    ; combout          ;
+; |registers|d6                           ; |registers|d6~corein                    ; combout          ;
+; |registers|d7                           ; |registers|d7~corein                    ; combout          ;
+; |registers|register--8:R1|inst8~clkctrl ; |registers|register--8:R1|inst8~clkctrl ; outclk           ;
+; |registers|clr~clkctrl                  ; |registers|clr~clkctrl                  ; outclk           ;
+; |registers|register--8:R0|inst7~feeder  ; |registers|register--8:R0|inst7~feeder  ; combout          ;
+; |registers|register--8:R0|inst5~feeder  ; |registers|register--8:R0|inst5~feeder  ; combout          ;
+; |registers|register--8:R0|inst2~feeder  ; |registers|register--8:R0|inst2~feeder  ; combout          ;
+; |registers|register--8:R0|inst1~feeder  ; |registers|register--8:R0|inst1~feeder  ; combout          ;
+; |registers|register--8:R0|inst~feeder   ; |registers|register--8:R0|inst~feeder   ; combout          ;
++-----------------------------------------+-----------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+    Info: Processing started: Mon May 10 23:02:06 2021
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off registers -c registers
+Info: Using vector source file "D:/wangyi/task-4/registers/registers.vwf"
+Warning: Compiler packed, optimized or synthesized away node "~ASDO~". Ignored vector source file node.
+Warning: Compiler packed, optimized or synthesized away node "~LVDS54p/nCEO~". Ignored vector source file node.
+Warning: Compiler packed, optimized or synthesized away node "~nCSO~". Ignored vector source file node.
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       7.41 %
+Info: Number of transitions in simulation is 14
+Info: Quartus II Simulator was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 164 megabytes
+    Info: Processing ended: Mon May 10 23:02:08 2021
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

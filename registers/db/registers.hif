@@ -1,0 +1,86 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+945
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+selector
+# storage
+db|registers.(1).cnf
+db|registers.(1).cnf
+# case_insensitive
+# source_file
+selector.bdf
+54f4cfe84a67d726322217b696cd644
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+selector:inst2
+}
+# macro_sequence
+
+# end
+# entity
+registerwr
+# storage
+db|registers.(2).cnf
+db|registers.(2).cnf
+# case_insensitive
+# source_file
+registerwr.bdf
+cc186b166c82ec9c73db4aa7d4d775a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+registerwr:inst1
+registerwr:inst3
+}
+# macro_sequence
+
+# end
+# entity
+registers
+# storage
+db|registers.(0).cnf
+db|registers.(0).cnf
+# case_insensitive
+# source_file
+registers.bdf
+93102218ab902ae19ce7e12f4f083af
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

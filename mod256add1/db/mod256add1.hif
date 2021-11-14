@@ -1,0 +1,66 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+920
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+mod256add1
+# storage
+db|mod256add1.(0).cnf
+db|mod256add1.(0).cnf
+# case_insensitive
+# source_file
+mod256add1.bdf
+670a79bb8a39165d4c80138a90781b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+mod16add1extend
+# storage
+db|mod256add1.(1).cnf
+db|mod256add1.(1).cnf
+# case_insensitive
+# source_file
+mod16add1extend.bdf
+682d072bb6ef52210903193e322384d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+mod16add1extend:inst
+mod16add1extend:inst1
+}
+# macro_sequence
+
+# end
+# complete
+

@@ -1,0 +1,256 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 17.347 ns
+From           : uIR21
+To             : register---8:Y|inst1
+From Clock     : --
+To Clock       : MACHONG
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 35.708 ns
+From           : registers:inst3|registerwr:inst1|inst5
+To             : pin_name3
+From Clock     : start
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 33.200 ns
+From           : uIR21
+To             : pin_name3
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 11.488 ns
+From           : uIR21
+To             : registers:inst3|registerwr:inst1|inst2
+From Clock     : --
+To Clock       : start
+Failed Paths   : 0
+
+Type           : Clock Setup: 'start'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 55.09 MHz ( period = 18.153 ns )
+From           : registers:inst3|registerwr:inst1|inst5
+To             : register---8:Y|inst1
+From Clock     : start
+To Clock       : start
+Failed Paths   : 0
+
+Type           : Clock Setup: 'MACHONG'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 55.09 MHz ( period = 18.153 ns )
+From           : registers:inst3|registerwr:inst1|inst5
+To             : register---8:Y|inst1
+From Clock     : MACHONG
+To Clock       : MACHONG
+Failed Paths   : 0
+
+Type           : Clock Setup: 'HALT'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 55.09 MHz ( period = 18.153 ns )
+From           : registers:inst3|registerwr:inst1|inst5
+To             : register---8:Y|inst1
+From Clock     : HALT
+To Clock       : HALT
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR11'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 63.70 MHz ( period = 15.699 ns )
+From           : registers:inst3|registerwr:inst1|inst5
+To             : register-4:PSW|inst2
+From Clock     : uIR11
+To Clock       : uIR11
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR10'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 64.61 MHz ( period = 15.477 ns )
+From           : registers:inst3|registerwr:inst1|inst5
+To             : register-4:PSW|inst2
+From Clock     : uIR10
+To Clock       : uIR10
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR9'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 65.07 MHz ( period = 15.367 ns )
+From           : registers:inst3|registerwr:inst1|inst5
+To             : register-4:PSW|inst2
+From Clock     : uIR9
+To Clock       : uIR9
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR14'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 94.15 MHz ( period = 10.621 ns )
+From           : register---8:Y|inst3
+To             : register---8:Y|inst1
+From Clock     : uIR14
+To Clock       : uIR14
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR20'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 193.87 MHz ( period = 5.158 ns )
+From           : registers:inst3|registerwr:inst1|inst4
+To             : registers:inst3|registerwr:inst3|inst4
+From Clock     : uIR20
+To Clock       : uIR20
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR22'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 193.87 MHz ( period = 5.158 ns )
+From           : registers:inst3|registerwr:inst1|inst4
+To             : registers:inst3|registerwr:inst3|inst4
+From Clock     : uIR22
+To Clock       : uIR22
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR21'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 193.87 MHz ( period = 5.158 ns )
+From           : registers:inst3|registerwr:inst1|inst4
+To             : registers:inst3|registerwr:inst3|inst4
+From Clock     : uIR21
+To Clock       : uIR21
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR19'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 202.88 MHz ( period = 4.929 ns )
+From           : registers:inst3|registerwr:inst1|inst4
+To             : registers:inst3|registerwr:inst3|inst4
+From Clock     : uIR19
+To Clock       : uIR19
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR13'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 211.42 MHz ( period = 4.730 ns )
+From           : 8YIWEIJICUNQI:YIWEI1|4yiweijicunqi:inst1|inst19
+To             : 8YIWEIJICUNQI:YIWEI1|4yiweijicunqi:inst1|inst19
+From Clock     : uIR13
+To Clock       : uIR13
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR16'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 212.86 MHz ( period = 4.698 ns )
+From           : registers:inst3|registerwr:inst1|inst4
+To             : registers:inst3|registerwr:inst3|inst4
+From Clock     : uIR16
+To Clock       : uIR16
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR12'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 239.35 MHz ( period = 4.178 ns )
+From           : 8YIWEIJICUNQI:YIWEI0|4yiweijicunqi:inst1|inst19
+To             : 8YIWEIJICUNQI:YIWEI0|4yiweijicunqi:inst1|inst19
+From Clock     : uIR12
+To Clock       : uIR12
+Failed Paths   : 0
+
+Type           : Clock Hold: 'uIR11'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : registers:inst3|registerwr:inst3|inst2
+To             : registers:inst3|registerwr:inst1|inst2
+From Clock     : uIR11
+To Clock       : uIR11
+Failed Paths   : 111
+
+Type           : Clock Hold: 'uIR9'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : registers:inst3|registerwr:inst3|inst2
+To             : registers:inst3|registerwr:inst1|inst2
+From Clock     : uIR9
+To Clock       : uIR9
+Failed Paths   : 104
+
+Type           : Clock Hold: 'uIR10'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : registers:inst3|registerwr:inst3|inst2
+To             : registers:inst3|registerwr:inst1|inst2
+From Clock     : uIR10
+To Clock       : uIR10
+Failed Paths   : 101
+
+Type           : Clock Hold: 'HALT'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : registers:inst3|registerwr:inst3|inst2
+To             : registers:inst3|registerwr:inst1|inst2
+From Clock     : HALT
+To Clock       : HALT
+Failed Paths   : 171
+
+Type           : Clock Hold: 'MACHONG'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : registers:inst3|registerwr:inst3|inst2
+To             : registers:inst3|registerwr:inst1|inst2
+From Clock     : MACHONG
+To Clock       : MACHONG
+Failed Paths   : 171
+
+Type           : Clock Hold: 'start'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : registers:inst3|registerwr:inst3|inst2
+To             : registers:inst3|registerwr:inst1|inst2
+From Clock     : start
+To Clock       : start
+Failed Paths   : 171
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 829
+
+--------------------------------------------------------------------------------------
+

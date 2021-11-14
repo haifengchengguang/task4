@@ -1,0 +1,43 @@
+|register-8
+Q7 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst.ACLR
+clr => inst.PRESET
+clr => inst1.ACLR
+clr => inst1.PRESET
+clr => inst2.ACLR
+clr => inst2.PRESET
+clr => inst3.ACLR
+clr => inst3.PRESET
+clr => inst4.ACLR
+clr => inst4.PRESET
+clr => inst5.ACLR
+clr => inst5.PRESET
+clr => inst6.ACLR
+clr => inst6.PRESET
+clr => inst7.ACLR
+clr => inst7.PRESET
+cp => inst.CLK
+cp => inst1.CLK
+cp => inst2.CLK
+cp => inst3.CLK
+cp => inst4.CLK
+cp => inst5.CLK
+cp => inst6.CLK
+cp => inst7.CLK
+D7 => inst.DATAIN
+Q6 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D6 => inst1.DATAIN
+Q5 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D5 => inst2.DATAIN
+Q4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D4 => inst3.DATAIN
+Q3 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst4.DATAIN
+Q2 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst5.DATAIN
+Q1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst6.DATAIN
+Q0 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+D0 => inst7.DATAIN
+
+

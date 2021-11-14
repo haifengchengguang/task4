@@ -1,0 +1,40 @@
+|mod256add1
+q0 <= mod16add1extend:inst.q0
+clk => mod16add1extend:inst.clk
+clr => mod16add1extend:inst.clr
+clr => mod16add1extend:inst1.clr
+q1 <= mod16add1extend:inst.q1
+q2 <= mod16add1extend:inst.q2
+q3 <= mod16add1extend:inst.q3
+q4 <= mod16add1extend:inst1.q0
+q5 <= mod16add1extend:inst1.q1
+q6 <= mod16add1extend:inst1.q2
+q7 <= mod16add1extend:inst1.q3
+
+
+|mod256add1|mod16add1extend:inst
+q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst2.ACLR
+clr => inst1.ACLR
+clr => inst.ACLR
+clr => inst4.ACLR
+clk => inst.CLK
+q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+q3 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+q4 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod256add1|mod16add1extend:inst1
+q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst2.ACLR
+clr => inst1.ACLR
+clr => inst.ACLR
+clr => inst4.ACLR
+clk => inst.CLK
+q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+q3 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+q4 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+

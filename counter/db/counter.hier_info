@@ -1,0 +1,28 @@
+|counter
+q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+d2 => inst15.IN0
+d2 => inst9.IN0
+pre => inst15.IN1
+pre => inst16.IN1
+pre => inst17.IN1
+pre => inst18.IN0
+pre => inst19.IN0
+pre => inst20.IN0
+pre => inst21.IN1
+pre => inst22.IN1
+clr => inst13.IN1
+clr => inst12.IN1
+clr => inst11.IN1
+clr => inst23.IN1
+d1 => inst16.IN0
+d1 => inst10.IN0
+d0 => inst17.IN0
+d0 => inst14.IN0
+clk => inst.CLK
+q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+q3 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+d3 => inst21.IN0
+d3 => inst3.IN0
+
+

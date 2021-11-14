@@ -1,0 +1,33 @@
+|4yiweijicunqi
+y3 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+CLR => inst18.ACLR
+CLR => inst19.ACLR
+CLR => inst20.ACLR
+CLR => inst21.ACLR
+CP => inst18.CLK
+CP => inst19.CLK
+CP => inst20.CLK
+CP => inst21.CLK
+D3 => inst1.IN0
+DM => inst1.IN1
+DM => inst5.IN1
+DM => inst9.IN1
+DM => inst13.IN1
+D2 => inst5.IN0
+D1 => inst9.IN0
+D0 => inst13.IN0
+L => inst14.IN0
+LM => inst14.IN1
+LM => inst10.IN1
+LM => inst6.IN1
+LM => inst2.IN1
+RM => inst12.IN1
+RM => inst8.IN1
+RM => inst4.IN1
+RM => inst.IN1
+R => inst.IN0
+y2 <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+y0 <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+y1 <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,97 @@
+|8YIWEIJICUNQI
+Y7 <= 4yiweijicunqi:inst.y3
+RM => 4yiweijicunqi:inst.RM
+RM => 4yiweijicunqi:inst1.RM
+DM => 4yiweijicunqi:inst.DM
+DM => 4yiweijicunqi:inst1.DM
+LM => 4yiweijicunqi:inst.LM
+LM => 4yiweijicunqi:inst1.LM
+R => 4yiweijicunqi:inst.R
+D7 => 4yiweijicunqi:inst.D3
+D6 => 4yiweijicunqi:inst.D2
+D5 => 4yiweijicunqi:inst.D1
+D4 => 4yiweijicunqi:inst.D0
+D3 => 4yiweijicunqi:inst1.D3
+D2 => 4yiweijicunqi:inst1.D2
+D1 => 4yiweijicunqi:inst1.D1
+D0 => 4yiweijicunqi:inst1.D0
+L => 4yiweijicunqi:inst1.L
+CP => 4yiweijicunqi:inst1.CP
+CP => 4yiweijicunqi:inst.CP
+CLR => 4yiweijicunqi:inst1.CLR
+CLR => 4yiweijicunqi:inst.CLR
+Y6 <= 4yiweijicunqi:inst.y2
+Y5 <= 4yiweijicunqi:inst.y1
+Y4 <= 4yiweijicunqi:inst.y0
+Y3 <= 4yiweijicunqi:inst1.y3
+Y2 <= 4yiweijicunqi:inst1.y2
+Y1 <= 4yiweijicunqi:inst1.y1
+Y0 <= 4yiweijicunqi:inst1.y0
+
+
+|8YIWEIJICUNQI|4yiweijicunqi:inst
+y3 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+CLR => inst18.ACLR
+CLR => inst19.ACLR
+CLR => inst20.ACLR
+CLR => inst21.ACLR
+CP => inst18.CLK
+CP => inst19.CLK
+CP => inst20.CLK
+CP => inst21.CLK
+D3 => inst1.IN0
+DM => inst1.IN1
+DM => inst5.IN1
+DM => inst9.IN1
+DM => inst13.IN1
+D2 => inst5.IN0
+D1 => inst9.IN0
+D0 => inst13.IN0
+L => inst14.IN0
+LM => inst14.IN1
+LM => inst10.IN1
+LM => inst6.IN1
+LM => inst2.IN1
+RM => inst12.IN1
+RM => inst8.IN1
+RM => inst4.IN1
+RM => inst.IN1
+R => inst.IN0
+y2 <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+y0 <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+y1 <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|8YIWEIJICUNQI|4yiweijicunqi:inst1
+y3 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+CLR => inst18.ACLR
+CLR => inst19.ACLR
+CLR => inst20.ACLR
+CLR => inst21.ACLR
+CP => inst18.CLK
+CP => inst19.CLK
+CP => inst20.CLK
+CP => inst21.CLK
+D3 => inst1.IN0
+DM => inst1.IN1
+DM => inst5.IN1
+DM => inst9.IN1
+DM => inst13.IN1
+D2 => inst5.IN0
+D1 => inst9.IN0
+D0 => inst13.IN0
+L => inst14.IN0
+LM => inst14.IN1
+LM => inst10.IN1
+LM => inst6.IN1
+LM => inst2.IN1
+RM => inst12.IN1
+RM => inst8.IN1
+RM => inst4.IN1
+RM => inst.IN1
+R => inst.IN0
+y2 <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+y0 <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+y1 <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+
+

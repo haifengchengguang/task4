@@ -1,0 +1,23 @@
+|register-4
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+clr => inst3.ACLR
+clr => inst3.PRESET
+clr => inst2.ACLR
+clr => inst2.PRESET
+clr => inst1.ACLR
+clr => inst1.PRESET
+clr => inst.ACLR
+clr => inst.PRESET
+cp => inst3.CLK
+cp => inst2.CLK
+cp => inst1.CLK
+cp => inst.CLK
+D0 => inst3.DATAIN
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst2.DATAIN
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst1.DATAIN
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst.DATAIN
+
+

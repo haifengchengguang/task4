@@ -1,0 +1,207 @@
+|counter-8
+Q0 <= counter-2:inst3.Q0
+CK => counter-2:inst3.CK
+CK => counter-2:inst2.CK
+CK => counter-2:inst1.CK
+CK => counter-2:inst.CK
+CLR => counter-2:inst3.CLR
+CLR => counter-2:inst2.CLR
+CLR => counter-2:inst1.CLR
+CLR => counter-2:inst.CLR
+LD => counter-2:inst3.LD
+LD => counter-2:inst2.LD
+LD => counter-2:inst1.LD
+LD => counter-2:inst.LD
+D1 => counter-2:inst3.D1
+D0 => counter-2:inst3.D0
+Q1 <= counter-2:inst3.Q1
+Q2 <= counter-2:inst2.Q0
+D3 => counter-2:inst2.D1
+D2 => counter-2:inst2.D0
+Q3 <= counter-2:inst2.Q1
+Q4 <= counter-2:inst1.Q0
+D5 => counter-2:inst1.D1
+D4 => counter-2:inst1.D0
+Q5 <= counter-2:inst1.Q1
+Q6 <= counter-2:inst.Q0
+D7 => counter-2:inst.D1
+D6 => counter-2:inst.D0
+Q7 <= counter-2:inst.Q1
+
+
+|counter-8|counter-2:inst3
+CN <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+CLR => inst.ACLR
+CLR => inst1.ACLR
+CLR => inst1.PRESET
+CLR => inst.PRESET
+CK => inst.CLK
+CK => inst1.CLK
+D1 => dataSelector1-2:inst2.A
+LD => inst6.IN0
+LD => dataSelector1-2:inst3.BY
+LD => dataSelector1-2:inst2.BY
+EN => inst9.IN0
+EN => inst8.IN0
+EN => dataSelector1-2:inst4.BY
+D0 => dataSelector1-2:inst3.A
+Q0 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter-8|counter-2:inst3|dataSelector1-2:inst2
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+BY => inst4.IN1
+A => inst.IN0
+AY => inst.IN1
+
+
+|counter-8|counter-2:inst3|dataSelector1-2:inst4
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+BY => inst4.IN1
+A => inst.IN0
+AY => inst.IN1
+
+
+|counter-8|counter-2:inst3|dataSelector1-2:inst3
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+BY => inst4.IN1
+A => inst.IN0
+AY => inst.IN1
+
+
+|counter-8|counter-2:inst2
+CN <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+CLR => inst.ACLR
+CLR => inst1.ACLR
+CLR => inst1.PRESET
+CLR => inst.PRESET
+CK => inst.CLK
+CK => inst1.CLK
+D1 => dataSelector1-2:inst2.A
+LD => inst6.IN0
+LD => dataSelector1-2:inst3.BY
+LD => dataSelector1-2:inst2.BY
+EN => inst9.IN0
+EN => inst8.IN0
+EN => dataSelector1-2:inst4.BY
+D0 => dataSelector1-2:inst3.A
+Q0 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter-8|counter-2:inst2|dataSelector1-2:inst2
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+BY => inst4.IN1
+A => inst.IN0
+AY => inst.IN1
+
+
+|counter-8|counter-2:inst2|dataSelector1-2:inst4
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+BY => inst4.IN1
+A => inst.IN0
+AY => inst.IN1
+
+
+|counter-8|counter-2:inst2|dataSelector1-2:inst3
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+BY => inst4.IN1
+A => inst.IN0
+AY => inst.IN1
+
+
+|counter-8|counter-2:inst1
+CN <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+CLR => inst.ACLR
+CLR => inst1.ACLR
+CLR => inst1.PRESET
+CLR => inst.PRESET
+CK => inst.CLK
+CK => inst1.CLK
+D1 => dataSelector1-2:inst2.A
+LD => inst6.IN0
+LD => dataSelector1-2:inst3.BY
+LD => dataSelector1-2:inst2.BY
+EN => inst9.IN0
+EN => inst8.IN0
+EN => dataSelector1-2:inst4.BY
+D0 => dataSelector1-2:inst3.A
+Q0 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter-8|counter-2:inst1|dataSelector1-2:inst2
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+BY => inst4.IN1
+A => inst.IN0
+AY => inst.IN1
+
+
+|counter-8|counter-2:inst1|dataSelector1-2:inst4
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+BY => inst4.IN1
+A => inst.IN0
+AY => inst.IN1
+
+
+|counter-8|counter-2:inst1|dataSelector1-2:inst3
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+BY => inst4.IN1
+A => inst.IN0
+AY => inst.IN1
+
+
+|counter-8|counter-2:inst
+CN <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+CLR => inst.ACLR
+CLR => inst1.ACLR
+CLR => inst1.PRESET
+CLR => inst.PRESET
+CK => inst.CLK
+CK => inst1.CLK
+D1 => dataSelector1-2:inst2.A
+LD => inst6.IN0
+LD => dataSelector1-2:inst3.BY
+LD => dataSelector1-2:inst2.BY
+EN => inst9.IN0
+EN => inst8.IN0
+EN => dataSelector1-2:inst4.BY
+D0 => dataSelector1-2:inst3.A
+Q0 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter-8|counter-2:inst|dataSelector1-2:inst2
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+BY => inst4.IN1
+A => inst.IN0
+AY => inst.IN1
+
+
+|counter-8|counter-2:inst|dataSelector1-2:inst4
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+BY => inst4.IN1
+A => inst.IN0
+AY => inst.IN1
+
+
+|counter-8|counter-2:inst|dataSelector1-2:inst3
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+BY => inst4.IN1
+A => inst.IN0
+AY => inst.IN1
+
+

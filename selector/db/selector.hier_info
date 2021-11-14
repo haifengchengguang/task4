@@ -1,0 +1,43 @@
+|selector
+Y7 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+b7 => inst19.IN0
+BY => inst19.IN1
+BY => inst22.IN1
+BY => inst23.IN1
+BY => inst25.IN1
+BY => inst27.IN1
+BY => inst29.IN1
+BY => inst31.IN1
+BY => inst33.IN1
+a7 => inst.IN0
+AY => inst.IN1
+AY => inst20.IN1
+AY => inst21.IN1
+AY => inst24.IN1
+AY => inst26.IN1
+AY => inst28.IN1
+AY => inst30.IN1
+AY => inst32.IN1
+Y6 <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+b6 => inst22.IN0
+a6 => inst20.IN0
+Y5 <= inst36.DB_MAX_OUTPUT_PORT_TYPE
+b5 => inst23.IN0
+a5 => inst21.IN0
+Y4 <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+b4 => inst25.IN0
+a4 => inst24.IN0
+Y3 <= inst38.DB_MAX_OUTPUT_PORT_TYPE
+b3 => inst27.IN0
+a3 => inst26.IN0
+Y2 <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+b2 => inst29.IN0
+a2 => inst28.IN0
+Y1 <= inst40.DB_MAX_OUTPUT_PORT_TYPE
+b1 => inst31.IN0
+a1 => inst30.IN0
+Y0 <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+b0 => inst33.IN0
+a0 => inst32.IN0
+
+
